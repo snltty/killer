@@ -52,7 +52,7 @@ namespace killer.win
             Execute("cmd.exe", string.Empty, new string[] {
                 "sc stop processKiller",
                 "sc delete processKiller",
-            });
+            },false);
         }
 
         [DllImport("killer.dll")]
